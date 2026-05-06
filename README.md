@@ -73,5 +73,4 @@ Each item has: name, category, description, dominant color (RGB), and style tags
 | Backend  | Python, Flask       |
 | Image    | Pillow, NumPy       |
 =======
-# fashion-recommendation-system
->>>>>>> bb05b1842a148eec4880dbf12586727ba1198605
+
