@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Fashion Recommendation System</h1>
+  <p>Upload a fashion image to get similar outfit recommendations</p>
+</header>
+
+<main>
+
+<section class="upload-section">
+
+  <h2>Upload an Image</h2>
+
+  <div class="upload-box">
+
+    <input type="file" id="file-input" accept="image/*">
+
+    <span class="upload-icon">📷</span>
+
+    <p>Click to upload image</p>
+
+  </div>
+
+  <div class="preview-area" id="preview-area">
+
+    <img id="preview-img" src="">
+
+    <div class="preview-info">
+
+      <p id="preview-name"></p>
+
+      <button onclick="clearUpload()">Remove</button>
+
+    </div>
+
+  </div>
+
+  <button
+    class="recommend-btn"
+    id="recommend-btn"
+    onclick="getRecommendations()"
+    disabled
+  >
+    Find Similar Outfits →
+  </button>
+
+  <p id="error-msg"></p>
+
+</section>
+
+<section class="filter-section">
+
+  <input
+    type="text"
+    id="search-box"
+    placeholder="Search recommendations..."
+  >
+
+  <select id="filter-category">
+
+    <option value="all">All</option>
+
+    <option value="topwear">Topwear</option>
+
+    <option value="dress">Dress</option>
+
+    <option value="bottomwear">Bottomwear</option>
+
+  </select>
+
+</section>
+
+<section class="results-section" id="results-section">
+
+  <h2>Recommended Outfits</h2>
+
+  <p id="results-meta"></p>
+
+  <div class="results-grid" id="results-grid"></div>
+
+</section>
+
+<section class="dataset-section">
+
+  <h2>Dataset Collection</h2>
+
+  <div class="dataset-grid" id="dataset-grid"></div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+fashion-dataset/images/
+history/
+__pycache__/
+features_cache.npz
