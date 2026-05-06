@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fashion Recommendation System
 
 A simple web-based fashion recommendation system that takes an uploaded image and recommends similar outfits from a dataset using color analysis.
@@ -71,3 +72,6 @@ Each item has: name, category, description, dominant color (RGB), and style tags
 | Logic    | JavaScript (fetch)  |
 | Backend  | Python, Flask       |
 | Image    | Pillow, NumPy       |
+=======
+# fashion-recommendation-system
+>>>>>>> bb05b1842a148eec4880dbf12586727ba1198605
